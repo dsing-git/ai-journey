@@ -1,0 +1,9 @@
+{
+    "time": "2026-08-28T09:00",
+    "interval": 900,
+    "temperature": 34.3,
+    "windspeed": 13.3,
+    "winddirection": 295,
+    "is_day": 1,
+    "weathercode": 0
+}
