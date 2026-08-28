@@ -23,5 +23,10 @@ for log_file in log_dir.glob("*.log"):
     except FileNotFoundError:
         print("Log file not found.")
         #log_data = []
-        f = []
-
+        #f = []
+    except PermissionError:
+        print("\nPermission denied to read the log file.")
+    except Exception as e:
+        print(f"\nAn error occurred while reading the log file: {e}")
+    finally:
+        print(f"\nLog parsing completed for {log_file.name}\n")
